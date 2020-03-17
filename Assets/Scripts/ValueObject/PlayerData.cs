@@ -6,17 +6,17 @@ using System;
 public class PlayerData
 {
     public int[] ownItems;
-    [Range(0,100)]
+    [Range(5,100)]
     public int str;
-    [Range(0, 100)]
+    [Range(5, 100)]
     public int vit;
-    [Range(0, 100)]
+    [Range(5, 100)]
     public int luk;
-    [Range(0, 100)]
+    [Range(5, 100)]
     public int @int;
-    [Range(0, 100)]
+    [Range(5, 100)]
     public int dex;
-    [Range(0, 100)]
+    [Range(5, 100)]
     public int agi;
 
     public float[] GetNormalizedStatus()
