@@ -32,7 +32,8 @@ public static class SaveSystem
         }
         else
         {
-            throw new Exception("File not exist at path " + path);
+            Debug.LogWarning("No save file exist");
+            return default(T);
         }
     }
 }
