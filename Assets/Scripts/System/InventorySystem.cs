@@ -25,7 +25,8 @@ public class InventorySystem : MonoBehaviour
         {
             slot.SetInventory(this);
         }
-        playerData = SaveSystem.Load<PlayerData>("playerData");
+        var saveData = SaveSystem.Load<PlayerData>("playerData");
+        playerData = saveData == null ? playerData : saveData;
     }
 
     private void Start()
